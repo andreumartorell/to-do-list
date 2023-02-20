@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import logo from './imatges/fcc-logo.png';
 import './App.css';
+import LlistaDeTasques from './components/LlistaDeTasques';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="aplicacio-tasques">
+      <div className='logo-contenidor'>
+        <img 
+          src={logo}
+          className='logo' />
+      </div>
+      <div className='tasques-llista-principal'>
+        <h1>Mis tareas</h1>
+          <LlistaDeTasques />
+      </div>
     </div>
   );
 }
