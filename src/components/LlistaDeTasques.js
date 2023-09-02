@@ -16,13 +16,13 @@ function LlistaDeTasques() {
   };
 
   const eliminarTasca = id => {
-    const tasquesActualitzades = tasques.filter(tasca => tasca.id !==id);
+    const tasquesActualitzades = tasques.filter(tasca => tasca.id !== id);
     setTasques(tasquesActualitzades);
   };
 
   const completarTasca = id => {
     const tasquesActualitzades = tasques.map(tasca => {
-      if (tasca.id == id) {
+      if (tasca.id === id) {
         tasca.completada = !tasca.completada;
       }
       return tasca;
@@ -37,16 +37,15 @@ function LlistaDeTasques() {
         {
           tasques.map((tasca) => 
             <Tasca 
-            key={tasca.id}
-            id={tasca.id}
-            text={tasca.text}
-            completada={tasca.completada}
-            eliminarTasca={eliminarTasca}
-            completarTasca={completarTasca}
+              key={tasca.id}
+              id={tasca.id}
+              text={tasca.text}
+              completada={tasca.completada}
+              eliminarTasca={eliminarTasca}
+              completarTasca={completarTasca}
             />
           )
         }
-
       </div>
     </>
   );

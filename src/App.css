@@ -6,17 +6,17 @@
 
 html, body {
   color: white;
-  background-color: #1b1b32;
+  background-color: #6e6ec6;
   font-family: Lato, sans-serif;
   margin-top: 40px;
 }
 
 h1 {
-  color: #1b1b32;
-  font-size: 25px;
+  color: #402d4b;
+  font-size: 29px;
   font-family: Roboto, sans-serif;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0 50px;
 }
 
 .aplicacio-tasques {
@@ -43,9 +43,11 @@ h1 {
 
 .tasques-llista-principal {
   width: 600px;
+  min-width: 523px;
   min-height: 500px;
-  background-color: #d0d0d5;
+  background-color: #ffd4cf;
   padding: 25px;
   margin: 10px;
   border-radius: 26px;
+  box-shadow: -2px 6px 20px 12px #505088;
 }

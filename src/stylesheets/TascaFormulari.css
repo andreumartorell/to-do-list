@@ -7,11 +7,13 @@
 
 .tasca-input {
   width: 350px;
+  height: 53px;
   font-size: 18px;
   background-color: white;
   padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #00471b;
+  border-radius: 29px 0 0 29px;
+  border: 2px solid #2fa196;
+  border-style: solid none solid solid;
   outline: none;
 }
 
@@ -19,13 +21,17 @@
 
 .tasca-boto {
   padding: 16px;
+  height: 53px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 13px 13px 0;
   cursor: pointer;
   outline: none;
-  background: #00471b;
+  background: #2fa196;
   color: white;
-  text-transform: capitalize;
+}
+
+.tasca-boto:hover {
+  background: #18dbc8;
 }

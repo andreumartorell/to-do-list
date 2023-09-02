@@ -25,21 +25,40 @@
   width: 25px;
   height: 25px;
   margin: 5px;
+  transition: ease-out 0.5s;
+}
+
+.tasca-icona:hover {
+  width: 30px;
+  height: 30px;
 }
 
 .tasca-contenidor:nth-child(3n + 1) {
-  background-color: #1b1b32;
+  background-color: #5bb069;
+}
+.tasca-contenidor:nth-child(3n + 1):hover {
+  background-color: #39d158;
 }
 
 .tasca-contenidor:nth-child(3n + 2) {
-  background-color: #2a2a40;
+  background-color: #398649;
+}
+.tasca-contenidor:nth-child(3n + 2):hover {
+  background-color: #39d158;
 }
 
 .tasca-contenidor:nth-child(3n + 3) {
-  background-color: #3b3b4f;
+  background-color: #2e5a25;
+}
+.tasca-contenidor:nth-child(3n + 3):hover {
+  background-color: #39d158;
 }
 
 .tasca-contenidor.completada {
-  background-color: #5a01a7;
+  background-color: #a14cbb;
+  text-decoration: line-through;
+}
+.tasca-contenidor.completada:hover {
+  background-color: #c125f0;
   text-decoration: line-through;
 }

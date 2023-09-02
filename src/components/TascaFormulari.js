@@ -27,13 +27,13 @@ function TascaFormulari(props) {
       <input 
         className='tasca-input'
         type='text'
-        placeholder='Escriu una tasca'
+        placeholder='Write a task..'
         name='text'
         onChange={manejarCambio}
       />
 
       <button className='tasca-boto'>
-        Agregar tasca
+        Add a task
       </button>
 
     </form>
